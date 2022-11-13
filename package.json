@@ -2,7 +2,7 @@
   "name": "realtime-editor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://harshil202.github.io/RealTimeEditor",
+  "homepage": "https://harshil202.github.io/RealTimeEditor",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
