@@ -6,7 +6,10 @@ const path = require('path');
 const { Server } = require('socket.io');
 const ACTIONS = require('./src/Actions');
 
-const server = https.createServer(app);
+
+const PORT = process.env.PORT;
+
+const server = https.createServer(app).listen(PORT);
 const io = new Server(server);
 
 app.use(express.static('build'));
@@ -64,5 +67,5 @@ io.on('connection', (socket) => {
     });
 });
 
-const PORT = process.env.PORT;
-server.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+//const PORT = process.env.PORT;
+//server.listen(PORT, () => console.log(`Listening on port ${PORT}`));
